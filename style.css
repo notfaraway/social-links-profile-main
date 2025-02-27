@@ -8,21 +8,66 @@
 
 :root {
   --background-color: hsl(0, 0%, 8%);
-  --wrapper-color:hsl(0, 0%, 12%);
-  --links-color:hsl(0, 0%, 20%);
-  --text-color:hsl(0, 0%, 100%);
-  --secondary-color:Green: hsl(75, 94%, 57%);
+  --box-color: hsl(0, 0%, 12%);
+  --links-color: hsl(0, 0%, 20%);
+  --text-color: hsl(0, 0%, 100%);
+  --secondary-color: hsl(75, 94%, 57%);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: var(--text-color);
   font-family: "Inter", serif;
   text-align: center;
 }
 
 body {
   background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  margin-top: 100px;
+  border-style: solid;
+  border-color: var(--box-color);
+  border-radius: 10px;
+  background-color: var(--box-color);
+  width: 300px;
+  height: 500px;
+}
+.owner-image {
+  width: 80px;
+  border-radius: 100px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.name {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+.location {
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+.bio {
+  color: var(--text-color);
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.links button {
+  color: var(--text-color);
+  background-color: var(--links-color);
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 250px;
+  font-size: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 8px;
 }
