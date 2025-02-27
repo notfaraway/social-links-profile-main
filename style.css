@@ -1,0 +1,28 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --background-color: hsl(0, 0%, 8%);
+  --wrapper-color:hsl(0, 0%, 12%);
+  --links-color:hsl(0, 0%, 20%);
+  --text-color:hsl(0, 0%, 100%);
+  --secondary-color:Green: hsl(75, 94%, 57%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  font-family: "Inter", serif;
+  text-align: center;
+}
+
+body {
+  background-color: var(--background-color);
+}
